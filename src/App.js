@@ -1,14 +1,21 @@
-
 import './App.css';
-import { TodoWrapper } from './components/TodoWrapper';
+import { Navbar } from './components/Navbar';
+//import { TodoWrapper } from './components/TodoWrapper';
 import { TodoWrapperLocalStorage } from './components/TodoWrapperLocalStorage';
-import SignInSignupwithLocalStorage from './signinup/SignInSignupwithLocalStorage';
-//import { SignInSignupwithLocalStorage } from './signinup/SignInSignupwithLocalStorage';
+import { SignInWithLocalStorage } from './signinup/SigninwithLocalStorage';
+
+import { SignUpWithLocalStorage } from './signinup/SignupwithLocalStorage';
+
 function App() {
   return (
     <div className="App">
-    <SignInSignupwithLocalStorage/>
+    <Navbar />
+    <br/><br/><br/><br/>
+    <SignUpWithLocalStorage />
+    <SignInWithLocalStorage />
+    
     </div>
+    
   );
 }
 
