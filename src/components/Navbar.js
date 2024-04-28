@@ -1,14 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
   return (
     <div className='sidenav'>
-        <ul>
-            <li><a href=''>Home</a></li>
-            <li><a href=''>Login</a></li>
-            <li><a href=''>Sign Up</a></li>
-            <li><a href=''>About us</a></li>
-        </ul>
+      <ul>
+        <li><Link className='link' to='/'>Home</Link></li>
+        <li><Link className='link' to='/about'>About us</Link></li> {/* Changed the link to '/about' */}
+      </ul>
     </div>
-  )
-}
+  );
+};
