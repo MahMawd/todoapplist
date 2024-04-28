@@ -8,14 +8,17 @@ import { SignUpWithLocalStorage } from './signinup/SignupwithLocalStorage';
 
 function App() {
   return (
-    <div className="App">
-    <Navbar />
-    <br/><br/><br/><br/>
-    <SignUpWithLocalStorage />
-    <SignInWithLocalStorage />
-    
-    </div>
-    
+    <Router>
+      <div className="App">
+        <Navbar />
+        <div className="main">
+          <Routes>
+            <Route path="/" element={<TodoWrapperLocalStorage />} />
+            <Route path="/about" element={<AboutUs />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
 
