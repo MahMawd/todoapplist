@@ -129,3 +129,46 @@ ul li .link.active {
 .aboutUs{
   padding: 10rem;
 }
+.SignUpWithLocalStorage{
+  padding: 10rem;
+}
+.SignInWithLocalStorage{
+  padding: 10rem;
+}
+#username, #password , #email{
+  outline: none;
+  background: none;
+  border: 1px solid #2d8dfc;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+  width: 300px;
+  color: #000000;
+}
+.sign {
+  margin-top: 0.3rem;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: #011627;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: #011627;
+}
+
+
+.sign:hover {
+  background-color: #1a5485;
+}
+
+.SignUpWithLocalStorage{
+  display: flex;
+  justify-content: center;
+  display: block;
+  padding: 10rem;
+}
