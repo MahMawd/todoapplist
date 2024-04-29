@@ -13,8 +13,13 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+.Auth {
+  margin-left: -10rem;
+  display: flex;
+  flex-direction: row;
+}
 .App {
+
   text-align: center;
 }
 
@@ -82,7 +87,7 @@ h1 {
 }
 
 .completed {
-  color: #ffffff;
+  color: #000000;
   text-decoration: line-through;
   cursor: pointer;
 }
@@ -104,20 +109,21 @@ h1 {
 
 ul {
   padding: 0;
-  display: flex; /* Use flexbox */
+  display: flex;
 }
 
 ul li {
   list-style-type: none;
-  margin: 0 10px; /* Adjust margin */
+  margin: 0 10px;
 }
 
 ul li .link {
+  margin-top: 2.5px;
   color: #eaecef;
   text-decoration: none;
   font-size: 16px;
   display: block;
-  padding: 20px; /* Adjust padding */
+  padding: 20px;
   border-radius: 6px;
 }
 
@@ -129,12 +135,18 @@ ul li .link.active {
 .aboutUs{
   padding: 10rem;
 }
-.SignUpWithLocalStorage{
-  padding: 10rem;
+.SignUpWithLocalStorage, .SignInWithLocalStorage{
+  text-align: center;
+  border: 2px solid black;
+  margin-top: 10rem;
+  border-radius: 15px;
+  background: #ffffff;
+  display: block;
+  justify-content: end;
+  margin-bottom: 20rem;
+  padding: 2rem;
 }
-.SignInWithLocalStorage{
-  padding: 10rem;
-}
+
 #username, #password , #email{
   outline: none;
   background: none;
@@ -145,8 +157,14 @@ ul li .link.active {
   width: 300px;
   color: #000000;
 }
+
+#username:focus, #password:focus , #email:focus{
+  border: 1px solid green;
+}
+
+
 .sign {
-  margin-top: 0.3rem;
+  margin-top: 0.9rem;
   display: inline-block;
   padding: 10px 20px;
   font-size: 16px;
@@ -165,10 +183,35 @@ ul li .link.active {
 .sign:hover {
   background-color: #1a5485;
 }
-
-.SignUpWithLocalStorage{
-  display: flex;
-  justify-content: center;
+#Switch {
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  height: 50px;
+  width: 60px;
+  margin-top: 35rem;
+  position: absolute;
+  left: 54rem;
+}
+#Switch:hover {
+  background: rgb(14, 69, 172);
+  color: white;
+}
+#SignOut{
+  cursor: pointer;
+  background-color: rgba(233, 49, 49, 0.637);
+  border: none;
+  text-decoration: none;
+  font-size: 16px;
   display: block;
+  padding: 20px;
+  border-radius: 6px;
+  color: white;
+}
+#SignOut:hover {
+  color: rgba(233, 49, 49, 0.637);
+  background: white;
+}
+#signout {
   padding: 10rem;
 }
